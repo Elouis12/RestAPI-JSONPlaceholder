@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Krub:400,700');
+
+
+.title {
+    color: grey;
+    font-size: 18px;
+}
+
+.cards{
+
+    font-family: 'Krub', arial, serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 1rem;
+    flex-wrap: wrap;
+
+}
+
+.profile{
+
+    position: relative;
+    /*font-family: san-serif, serif;*/
+    text-align: center;
+    width: 500px;
+    max-width: 400px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    background: white;
+    margin-bottom: 20px;
+    border-radius: 5px;
+
+
+}
+
+.profile-image{
+
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto 20px auto;
+    display: block;
+}
+
+.profile-name{
+
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.profile-title{
+
+    margin-bottom: 20px;
+}
+
+.profile-detail{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .90em;
+    flex-wrap: wrap;
+}
+
+.profile-detail > * {
+
+    margin-bottom: 10px;
+}
+
+.profile-detail-contact > * {
+
+    background: rgba(233,239,251,255);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.profile-detail-contact > * > * {
+
+    margin: 0 3px 0 3px;
+}
+
+.profile-detail-address > *{
+
+    margin: 0 3px 0 3px;
+}
+
+.profile-delete{
+
+    margin: 15px 0px 0px 0px;
+}
+
+
+.profile-delete-button{
+
+/*    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    bottom: 0;*/
+    height: 50px;
+    width: 100%;
+    color: white;
+    background: red;
+    font-weight: bold;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+
+}

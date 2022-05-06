@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600');
+
+*,*:before, *:after {
+    /*box-sizing: border-box;*/
+    padding: 0;
+    margin: 0;
+    /*font-family: 'Poppins', sans-serif;*/
+}
+
+.dropdown-container {
+    position: absolute;
+    top: 0px;
+    z-index: 2;
+    /*background: rgba(0,0,0,.03);*/
+    width: 220px;
+    padding: 10px;
+    min-height: 225px;
+}
+
+input#checkbox {
+    display: none;
+}
+
+label {
+    width: 40px;
+    height: 35px;
+    display: flex;
+    background: #fff;
+    transition: 0.2s linear;
+    position: relative;
+}
+
+
+label:after {
+    margin-left: 9px;
+    position: absolute;
+    content:'';
+    background: rgba(193,199,255,255);
+    width: 20px;
+    height: 2px;
+    box-shadow: 0 6px 0px rgba(193,199,255,255);
+
+    top: 15px;
+}
+
+label:before {
+    margin-left: 9px;
+    position: absolute;
+    content:'';
+    background:rgba(193,199,255,255);
+    width: 20px;
+    height: 2px;
+    top: 9px;;
+    left: 0;
+}
+
+
+label:hover {
+    background:rgba(255,255,255,.8);
+}
+
+
+label:active {
+    background:rgba(255,255,255,.6);
+}
+
+
+.menu-content {
+    line-height: 2em;
+    font-family: Arial, san-serif, serif;
+    background: white;
+    max-width: 200px;
+    box-shadow: 0 8px 20px -10px rgba(0,0,0,.2);
+    overflow: hidden;
+    transition: opacity 1s linear;
+    color: #6F6F6F;
+    opacity: 0;
+}
+
+ul {
+    list-style: none;
+    position: relative;
+}
+
+
+ul > li {
+    /*padding: 5px 14px;*/
+position: relative;
+    cursor: default;
+    transition: 0.2s ease-in-out;
+    border-left: 3px solid transparent;
+    font-weight: 300;
+
+}
+
+ul > li {
+    border-bottom: 1px solid rgba(0,0,0,.03500);
+}
+
+ul > li:last-child {
+    border-bottom: 0;
+
+}
+
+
+
+ul > li:hover {
+    font-weight: 400;
+    color: rgba(193,199,255,255);
+    background: rgba(0,0,0,0.05);
+    border-left: 3px solid rgba(193,199,255,255);
+}
+
+
+ul > li:active {
+    background: rgba(0,0,0,0.1);
+}
+
+
+input:checked ~ .menu-content {
+    opacity: 1;
+}
+
+
+
+
+input:checked ~ label {
+
+    background:rgba(193,199,255,255);
+}
+
+
+
+input:checked ~ label:after {
+    transform: rotate(45deg);
+    box-shadow: 0 6px 0px rgba(0,0,0,0);
+    top: 18px;
+    background: white;
+}
+
+input:checked ~ label:before {
+    background: white;
+    top: 18px;
+    transform: rotate(-45deg);
+}
